@@ -110,7 +110,7 @@ The implementation follows the recursive structure outlined in Section VI of the
 2.  **Recursive Step (n >= 2):**
     *   Split $A$ into four $n/2 \times n/2$ blocks: $A_{11}, A_{12}, A_{21}, A_{22}$.
     *   Recursively call `lsu_factorization` four times on derived matrices (corresponding to steps 3.1, 3.2, 3.3, 3.4 in the paper's algorithm description).
-    *   Compute intermediate matrices based on the results of the recursive calls (e.g., $A'_{12}$, $A'_{21}$, $A''_{22}$). Helper functions like `_ginv_swp`, `_unit_mapping`, `_extended_mapping` implement concepts from Section III of the paper.
+    *   Compute intermediate matrices based on the results of the recursive calls (e.g., `$A'_{12}$`, `$A'_{21}$`, `$A''_{22}$`). Helper functions like `_ginv_swp`, `_unit_mapping`, `_extended_mapping` implement concepts from Section III of the paper.
     *   Assemble the final $L, S, U, M, W, \hat{S}, \bar{S}, I, J, \bar{I}, \bar{J}$ matrices from the block results according to equations (18) through (27).
 
 ## Mathematical Properties
