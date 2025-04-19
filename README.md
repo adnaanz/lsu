@@ -57,7 +57,7 @@ Import the `lsu_factorization` function and pass your matrix (as a PyTorch tenso
 
 ```python
 import torch
-# Assuming the code is in lsu_factorization.py
+
 from lsu import lsu_factorization, _check_lsu_final_properties
 
 # Ensure matrix dimension is a power of 2
